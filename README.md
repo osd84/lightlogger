@@ -1,7 +1,7 @@
 
 # LightLogger
 
-A stupid and brutal **logger system**
+A stupid and brutal PHP **logger system**
 Orignally found in gist <a href="https://gist.github.com/kevinchappell/09130ee9036f5954ac8f">kevinchappell</a><br><br>
 No Deps
 <br>
