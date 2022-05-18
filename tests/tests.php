@@ -12,8 +12,7 @@ $GLOBALS['debug'] = true; // default
 btrHeader(__FILE__);
 
 // oldschool bootstrap
-require_once(ROOT . '/src/petitcitron/lightLogger/Logger.php');
-require_once(ROOT . '/src/petitcitron/lightLogger/NoLogger.php');
+require_once(ROOT . '/src/bootstrap.php');
 
 
 

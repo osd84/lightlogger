@@ -30,8 +30,9 @@ use petitcitron\lightLogger\Logger;
 use petitcitron\lightLogger\NoLogger;
 
 define('ROOT', dirname(__FILE__, 2));
-require_once(ROOT . '/src/petitcitron/lightLogger/Logger.php');
-require_once(ROOT . '/src/petitcitron/lightLogger/NoLogger.php');
+require_once(ROOT . '/src/bootstrap.php');
+// require_once(ROOT . '/my_vendor_dir/lightlogger/src/bootstrap.php');
+
 
 // if want log
 $log = new Logger(ROOT . '/logs/', 'myapp.log');
