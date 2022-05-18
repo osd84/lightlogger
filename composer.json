@@ -10,7 +10,7 @@
   ],
   "require": {},
   "require-dev": {
-    "petitcitron/brutaltestrunner": "dev-main"
+    "petitcitron/brutaltestrunner": "^2"
   },
   "repositories": [
     {
