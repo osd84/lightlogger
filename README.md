@@ -3,10 +3,9 @@
 
 A stupid and brutal PHP **logger system**
 Orignally found in gist <a href="https://gist.github.com/kevinchappell/09130ee9036f5954ac8f">kevinchappell</a><br><br>
-No Deps
 <br>
 
-## No Composer / No PSR firendly
+## No PSR firendly
 
 I don't care about PSR  🤷‍♂️
 
@@ -17,9 +16,7 @@ I don't care about PSR  🤷‍♂️
 
 ## Installation
 
-
-1  . Unzip the Lib <br>
-2  . Import And Play
+... comming soon
 
 Si more in /tests/tests.php
 
