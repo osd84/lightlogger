@@ -1,0 +1,12 @@
+{
+  "name": "petitcitron/lightlogger",
+  "description": "A stupid and brutal PHP logger system",
+  "type": "library",
+  "license": "MIT license",
+  "authors": [
+    {
+      "name": "PetitCitron"
+    }
+  ],
+  "require": {}
+}

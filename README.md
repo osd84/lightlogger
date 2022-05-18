@@ -8,8 +8,7 @@ No Deps
 
 ## No Composer / No PSR firendly
 
-**No composer**, because i don't like it.<br>
-I don't care about PSR too.  🤷‍♂️
+I don't care about PSR  🤷‍♂️
 
 
 ## Requirements
