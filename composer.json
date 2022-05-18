@@ -2,11 +2,25 @@
   "name": "petitcitron/lightlogger",
   "description": "A stupid and brutal PHP logger system",
   "type": "library",
-  "license": "MIT license",
+  "license": "MIT",
   "authors": [
     {
       "name": "PetitCitron"
     }
   ],
-  "require": {}
+  "require": {},
+  "require-dev": {
+    "petitcitron/brutaltestrunner": "dev-main"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/PetitCitron/BrutalTestRunner"
+    }
+   ],
+  "autoload": {
+    "psr-4": {
+      "PetitCitron\\LightLogger\\": "src/"
+    }
+  }
 }

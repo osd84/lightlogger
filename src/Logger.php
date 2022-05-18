@@ -9,7 +9,7 @@
  * @since              lightLogger .5
  */
 
-namespace petitcitron\lightLogger;
+namespace PetitCitron\LightLogger;
 
 
 /**
