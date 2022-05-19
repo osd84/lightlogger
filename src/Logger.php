@@ -71,7 +71,9 @@ class Logger
                     error_log('Could not write to ' . $log_file, 0);
                 }
             }
-            fclose($log_file);
+            if(!empty($log_file)) {
+                fclose($log_file);
+            }
         }
     }
 
