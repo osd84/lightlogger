@@ -60,7 +60,7 @@ class Logger
     public function __destruct()
     {
         $log_file = fopen($this->logFile, 'a');
-        if (!empty($this->log)) {
+        if (!empty($this->log) && !empty($log_file)) {
             $this->log[] = '';
             $log = implode(PHP_EOL, $this->log);
             if (!fwrite($log_file, $log)) {
@@ -71,9 +71,7 @@ class Logger
                     error_log('Could not write to ' . $log_file, 0);
                 }
             }
-            if(!empty($log_file)) {
-                fclose($log_file);
-            }
+            fclose($log_file);
         }
     }
 
