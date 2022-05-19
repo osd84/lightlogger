@@ -49,7 +49,7 @@ class Logger
             $filename = 'app.log';
         }
         if (!file_exists($logDir)) {
-            mkdir($logDir, 0700, true);
+            mkdir($logDir, 0744, true);
         }
         $this->logFile = $logDir . $filename;
     }
@@ -64,7 +64,7 @@ class Logger
             $this->log[] = '';
             $log = implode(PHP_EOL, $this->log);
             if (!fwrite($log_file, $log)) {
-                chmod($this->logFile, 0600);
+                chmod($this->logFile, 0644);
                 $log_file = fopen($this->logFile, 'a');
                 if (!fwrite($log_file, $log)) {
                     // log a problem with the logger
