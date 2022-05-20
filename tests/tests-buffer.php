@@ -24,11 +24,13 @@ function clearLogFile() {
 }
 
 clearLogFile();
-
-$log = new Logger(ROOT2 . '/tests/logs', 'test.log');
+// if want log
+$log = new Logger(ROOT2 . '/tests/logs', 'test.log', true);
 $log->info('an Info'); // May-13-2022 10:34:57 | Info: an Info
 $log->error('an Err'); // May-13-2022 10:34:57 | Error: an Err
 $log->beer('an Beer'); // May-13-2022 10:34:57 | Beer: an Beer
+$btr->assertEqual(file_exists(ROOT2 . '/tests/logs/test.log'), false, 'Log file doesn\'t exit yet');
+unset($log);
 $content = file_get_contents(ROOT2 . '/tests/logs/test.log');
 $content = explode("\n", $content);
-$btr->assertEqual(4, count($content), 'Checking write log while running');
+$btr->assertEqual(4, count($content), 'Checking write log after object destruct');

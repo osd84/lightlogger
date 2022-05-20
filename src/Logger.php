@@ -30,6 +30,7 @@ class Logger
 {
 
     private $logFile;
+    private $useBuffer;
     private $log = [];
 
     /**
@@ -37,7 +38,7 @@ class Logger
      *
      * @param string $filename
      */
-    public function __construct($logDir = null, $filename = null)
+    public function __construct($logDir = null, $filename = null, $useBuffer = false)
     {
         if (empty($logDir)) {
             $logDir = __DIR__ . '/logs/';
@@ -52,12 +53,18 @@ class Logger
             mkdir($logDir, 0744, true);
         }
         $this->logFile = $logDir . $filename;
+        $this->useBuffer = $useBuffer;
     }
 
     /**
      * Writes to log file before class is unloaded from memory
      */
     public function __destruct()
+    {
+        $this->writeBuffer();
+    }
+
+    public function writeBuffer()
     {
         $log_file = fopen($this->logFile, 'a');
         if (!empty($this->log) && !empty($log_file)) {
@@ -71,6 +78,7 @@ class Logger
                     error_log('Could not write to ' . $log_file, 0);
                 }
             }
+            $this->log = []; // purge
             fclose($log_file);
         }
     }
@@ -98,6 +106,9 @@ class Logger
     {
         $date = date('M-d-Y H:i:s');
         $this->log[] = "$date | $type: $text";
+        if(!$this->useBuffer) {
+            $this->writeBuffer(); // write now
+        }
         return true;
     }
 

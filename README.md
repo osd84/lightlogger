@@ -68,5 +68,5 @@ Simple Tests by running <br>
 Read this file for Know how use this lib.
 
 ```sh
-php7.4 tests/tests.php
+php7.4 tests/run.php
 ```
