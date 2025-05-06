@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "548e7d5d8434cb05eaa369f6933e5b41",
+    "packages": [],
+    "packages-dev": [
+        {
+            "name": "osd84/brutaltestrunner",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/osd84/BrutalTestRunner.git",
+                "reference": "f04d52431140f4be6b58528f743ec18ff477da0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/osd84/BrutalTestRunner/zipball/f04d52431140f4be6b58528f743ec18ff477da0a",
+                "reference": "f04d52431140f4be6b58528f743ec18ff477da0a",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "osd84\\BrutalTestRunner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "osd84"
+                }
+            ],
+            "description": "Minimalist PHP test runner Brutal dev design",
+            "support": {
+                "issues": "https://github.com/osd84/BrutalTestRunner/issues",
+                "source": "https://github.com/osd84/BrutalTestRunner/tree/3.0.1"
+            },
+            "time": "2025-05-06T19:59:14+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

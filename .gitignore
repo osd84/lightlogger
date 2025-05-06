@@ -42,3 +42,4 @@ nbproject/*
 # Sass preprocessor
 .sass-cache/
 tests/logs*
+/vendor/

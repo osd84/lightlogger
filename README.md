@@ -5,20 +5,19 @@ A stupid and brutal PHP **logger system**
 Orignally found in gist <a href="https://gist.github.com/kevinchappell/09130ee9036f5954ac8f">kevinchappell</a><br><br>
 <br>
 
-## No PSR firendly
-
-I don't care about PSR  🤷‍♂️
-
-
 ## Requirements
 
 - PHP 7.4+
 
+![screen.png](screen.png)
+
 ## Installation
 
-... comming soon
+```
+composer require osd84/lightlogger
+```
 
-Si more in /tests/tests.php
+## Usage
 
 ```php
 <?php
@@ -26,9 +25,8 @@ use osd84\LightLogger\Logger;
 use osd84\LightLogger\NoLogger;
 
 define('ROOT', dirname(__FILE__, 2));
-require_once(ROOT . '/src/bootstrap.php');
-// require_once(ROOT . '/my_vendor_dir/lightlogger/src/bootstrap.php');
 
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 // if want log
 $log = new Logger(ROOT . '/logs/', 'myapp.log');
@@ -62,11 +60,8 @@ $log->info('Log is Enabled') // May-13-2022 10:34:57 | Info: Log is Enabled
 
 ## Tests
 
-
-
 Simple Tests by running <br>
-Read this file for Know how use this lib.
 
 ```sh
-php7.4 tests/run.php
+php tests/run.php
 ```
