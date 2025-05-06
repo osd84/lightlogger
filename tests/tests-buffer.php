@@ -1,9 +1,9 @@
 <?php
 
 
-use PetitCitron\BrutalTestRunner\BrutalTestRunner;
-use PetitCitron\LightLogger\Logger;
-use PetitCitron\LightLogger\NoLogger;
+use osd84\BrutalTestRunner\BrutalTestRunner;
+use osd84\LightLogger\Logger;
+use osd84\LightLogger\NoLogger;
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 define('ROOT2', dirname(__FILE__, 2));

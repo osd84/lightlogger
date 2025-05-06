@@ -22,8 +22,8 @@ Si more in /tests/tests.php
 
 ```php
 <?php
-use petitcitron\lightLogger\Logger;
-use petitcitron\lightLogger\NoLogger;
+use osd84\LightLogger\Logger;
+use osd84\LightLogger\NoLogger;
 
 define('ROOT', dirname(__FILE__, 2));
 require_once(ROOT . '/src/bootstrap.php');

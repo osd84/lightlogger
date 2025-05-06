@@ -5,22 +5,16 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "PetitCitron"
+      "name": "osd84"
     }
   ],
   "require": {},
   "require-dev": {
-    "petitcitron/brutaltestrunner": "^2"
+    "osd84/brutaltestrunner": "^3"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/PetitCitron/BrutalTestRunner"
-    }
-   ],
   "autoload": {
     "psr-4": {
-      "PetitCitron\\LightLogger\\": "src/"
+      "osd84\\LightLogger\\": "src/"
     }
   }
 }

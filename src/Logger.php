@@ -3,13 +3,13 @@
  * Super simple class for logging. Generates regular logs and csv files
  *
  * @package            lightLogger
- * @author             PetitCitron https://github.com/PetitCitron
+ * @author             osd84 https://github.com/osd84
  * @Orignalauthor      Kevin Chappell <kevin.b.chappell@gmail.com>
  * @license            http://opensource.org/licenses/MIT The MIT License (MIT)
  * @since              lightLogger .5
  */
 
-namespace PetitCitron\LightLogger;
+namespace osd84\LightLogger;
 
 
 /**
